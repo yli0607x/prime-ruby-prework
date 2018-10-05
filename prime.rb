@@ -1,8 +1,10 @@
 # Add  code here!
 def prime？(x)
   return false if x < 2
-  (2..Math.sqrt(x)).each.do |i|
-   return false if x % i == 0
+  (2..x).each.do |i|
+   if x % i == 0
+     return false
+   end
  end
- true
+ return true
  end
